@@ -18,11 +18,11 @@ footer {
 }
 
 .card {
-  height: 60vh;
+  height: 45vh;
 }
 
 .card-img-top {
   height: 30vh;
-  width: 100%;
   object-fit: cover;
+  object-position: top;
 }

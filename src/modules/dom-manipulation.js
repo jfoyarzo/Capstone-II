@@ -10,14 +10,17 @@ const displayAnimals = async () => {
     <div class="card mb-3">
     <img src="${element.image_link}" class="card-img-top" alt="${element.name} image">
     <div class="card-body d-flex flex-column">
-      <h5 class="card-title">${element.name}</h5>
-      <h6 class="card-subtitle mb-2 text-muted">${element.latin_name}</h6>
-      <ul class="card-text">
-      <li>Habitat: ${element.habitat}</li>
-      <li>Diet: ${element.diet}</li>
-      <li>Location: ${element.geo_range}</li>
-      </ul>
-      <a href="#" class="btn btn-primary align-self-end mt-auto" data-index="${index}">Comments</a>
+      <div class="d-flex justify-content-between">
+        <div class="title-wrapper">
+          <h5 class="card-title">${element.name}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">${element.latin_name}</h6>
+        </div>      
+        <div class="like-wrapper text-center">
+          <i class="fa-regular fa-heart fa-2xl like"></i>
+          <p>2</p>
+        </div>      
+      </div>      
+      <button type="button" class="btn btn-primary align-self-end mt-auto" data-index="${index}">Comments</button>
     </div>
     </div>
   </div>`;
