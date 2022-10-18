@@ -11,3 +11,12 @@
 .nav-link {
   margin-left: 2.5em;
 }
+
+main {
+  height: 80vh;
+}
+
+footer {
+  border: 2px solid black;
+  padding: 2em;
+}
