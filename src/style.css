@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: brown;
+.main-nav {
+  padding: 2rem;
+  background-color: white !important;
+  font-size: 1.5em;
+}
+
+.nav-link {
+  margin-left: 2.5em;
 }
