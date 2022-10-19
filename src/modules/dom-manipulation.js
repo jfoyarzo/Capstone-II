@@ -1,26 +1,29 @@
-import getAnimals from './api-requests.js';
+import getShows from './api-requests.js';
 
-const displayAnimals = async () => {
-  const animals = await getAnimals(10);
+const displayShows = async () => {
+  const data = await getShows('c');
   const fragment = new DocumentFragment();
   const container = document.querySelector('.cards-container');
   const parser = new DOMParser();
-  animals.forEach((element, index) => {
+  data.forEach((element, index) => {
+    const { show } = element;
     const cardStr = `<div class="col-12 col-md-4">
     <div class="card mb-3">
-    <img src="${element.image_link}" class="card-img-top" alt="${element.name} image">
+    <img src="${show.image.original}" class="card-img-top" alt="${show.name} image">
     <div class="card-body d-flex flex-column">
       <div class="d-flex justify-content-between">
-        <div class="title-wrapper">
-          <h5 class="card-title">${element.name}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">${element.latin_name}</h6>
-        </div>      
-        <div class="like-wrapper text-center">
-          <i class="fa-regular fa-heart fa-2xl like"></i>
+          <h5 class="card-title">${show.name}</h5>
+          <div class="btn-wrapper">     
+        <div class="like-wrapper text-center">          
+          <i class="fa-regular fa-heart fa-xl like"></i>
           <p>2</p>
         </div>      
-      </div>      
-      <button type="button" class="btn btn-primary align-self-end mt-auto" data-index="${index}">Comments</button>
+        <div class="comments-wrapper text-center">          
+        <i class="fa-regular fa-comment-dots fa-xl" data-index="${index}"></i>
+          <p>2</p>
+        </div>      
+        </div>      
+      </div>
     </div>
     </div>
   </div>`;
@@ -30,4 +33,4 @@ const displayAnimals = async () => {
   container.appendChild(fragment);
 };
 
-export default displayAnimals;
+export default displayShows;

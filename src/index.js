@@ -1,5 +1,5 @@
 import './style.css';
 
-import displayAnimals from './modules/dom-manipulation.js';
+import displayShows from './modules/dom-manipulation.js';
 
-displayAnimals();
+displayShows();
