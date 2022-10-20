@@ -12,11 +12,17 @@
   margin-left: 2.5em;
 }
 
-main {
-  height: 80vh;
-}
-
 footer {
   border: 2px solid black;
   padding: 2em;
+}
+
+.card {
+  height: 45vh;
+}
+
+.card-img-top {
+  height: 30vh;
+  object-fit: cover;
+  object-position: top;
 }
