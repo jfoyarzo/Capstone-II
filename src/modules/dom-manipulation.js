@@ -18,9 +18,7 @@ const displayShows = async () => {
           <i class=" fa-regular fa-heart fa-xl like" role="button"></i>
           <p>2</p>
         </div>      
-        <div class="comments-wrapper text-center" data-index="${index}" role="button">         
-        <i class="fa-regular fa-comment-dots fa-xl details-btn" id=${show.name} data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-          <p>2</p>
+        <div class="comments-wrapper text-center" data-index="${index}" role="button">
           <button id =${show.name} type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Details
           </button>
