@@ -1,4 +1,4 @@
-import { getShows, getLikes } from './api-requests.js';
+import { getShows, getLikes, postLike } from './api-requests.js';
 
 const displayShows = async () => {
   const data = await getShows('c');
@@ -38,5 +38,10 @@ const displayShows = async () => {
   });
   container.appendChild(fragment);
 };
+
+const updateLikes = async (id, element) => {
+  let likeCount = element.lastElementChild.textContent;
+  
+}
 
 export default displayShows;

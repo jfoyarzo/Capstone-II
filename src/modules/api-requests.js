@@ -11,4 +11,15 @@ const getLikes = async () => {
   return result;
 };
 
-export { getShows, getLikes };
+const postLike = async (id) => {
+  const result = await fetch(likesUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ item_id: id }),
+  });
+  return result;
+};
+
+export { getShows, getLikes, postLike };
