@@ -9,6 +9,6 @@ displayShows()
       const { id } = element.dataset;
       element.addEventListener('click', () => {
         updateLikes(id, element);
-      });
+      }, { once: true });
     });
   });

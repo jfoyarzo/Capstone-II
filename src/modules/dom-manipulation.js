@@ -47,7 +47,6 @@ const updateLikes = async (id, element) => {
     likeCount += 1;
     element.lastElementChild.innerText = likeCount;
     heart.classList.add('fa-solid');
-    element.classList.add('disabled');
   }
 };
 
