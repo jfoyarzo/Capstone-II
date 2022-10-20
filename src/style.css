@@ -17,6 +17,11 @@ footer {
   padding: 2em;
 }
 
+.show-image{
+  width: 70%;
+  height: 50vh;
+}
+
 .card {
   height: 45vh;
 }
