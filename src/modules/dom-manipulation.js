@@ -13,7 +13,7 @@ const displayShows = async () => {
     if (item) {
       likeCount = item.likes;
     }
-    const cardStr = `<div class="col-12 col-md-4">
+    const cardStr = `<div class="col-12 col-md-4 card-data">
     <div class="card mb-3">
     <img src="${show.image.original}" class="card-img-top" alt="${show.name} image">
     <div class="card-body d-flex flex-column">
@@ -24,9 +24,10 @@ const displayShows = async () => {
           <i class="fa-regular fa-heart fa-xl like"></i>
           <p>${likeCount}</p>
         </div>      
-        <div class="comments-wrapper text-center" data-index="${index}" role="button">          
-        <i class="fa-regular fa-comment-dots fa-xl"></i>
-          <p>2</p>
+        <div class="comments-wrapper text-center" data-index="${index}" role="button">
+          <button id =${show.name} type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Details
+          </button>
         </div>      
         </div>      
       </div>
