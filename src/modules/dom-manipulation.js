@@ -7,7 +7,7 @@ const displayShows = async () => {
   const parser = new DOMParser();
   data.forEach((element, index) => {
     const { show } = element;
-    const cardStr = `<div class="col-12 col-md-4">
+    const cardStr = `<div class="col-12 col-md-4 card-data" >
     <div class="card mb-3">
     <img src="${show.image.original}" class="card-img-top" alt="${show.name} image">
     <div class="card-body d-flex flex-column">
@@ -19,8 +19,11 @@ const displayShows = async () => {
           <p>2</p>
         </div>      
         <div class="comments-wrapper text-center" data-index="${index}" role="button">         
-        <i class="fa-regular fa-comment-dots fa-xl" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+        <i class="fa-regular fa-comment-dots fa-xl details-btn" id=${show.name} data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
           <p>2</p>
+          <button id =${show.name} type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Details
+          </button>
         </div>      
         </div>      
       </div>
