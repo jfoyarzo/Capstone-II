@@ -14,12 +14,12 @@ const displayShows = async () => {
       <div class="d-flex justify-content-between">
           <h5 class="card-title">${show.name}</h5>
           <div class="btn-wrapper d-flex">     
-        <div class="like-wrapper text-center me-3">          
-          <i class=" fa-regular fa-heart fa-xl like" role="button"></i>
+        <div class="like-wrapper text-center me-3" data-index="${index}" role="button">          
+          <i class="fa-regular fa-heart fa-xl like"></i>
           <p>2</p>
         </div>      
-        <div class="comments-wrapper text-center">          
-        <i class="fa-regular fa-comment-dots fa-xl" data-index="${index}" role="button"></i>
+        <div class="comments-wrapper text-center" data-index="${index}" role="button">          
+        <i class="fa-regular fa-comment-dots fa-xl"></i>
           <p>2</p>
         </div>      
         </div>      
