@@ -19,7 +19,7 @@ const displayShows = async () => {
           <p>2</p>
         </div>      
         <div class="comments-wrapper text-center" data-index="${index}" role="button">
-          <button id =${show.name} type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <button id =${show.name} type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               Details
           </button>
         </div>      

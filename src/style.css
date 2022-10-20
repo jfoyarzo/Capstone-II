@@ -24,3 +24,8 @@ footer {
   object-fit: cover;
   object-position: top;
 }
+
+.show-image{
+  width: 70% !important;
+  height: 40vh !important;
+}
