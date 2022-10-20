@@ -40,8 +40,15 @@ const displayShows = async () => {
 };
 
 const updateLikes = async (id, element) => {
-  let likeCount = element.lastElementChild.textContent;
-  
-}
+  let likeCount = parseInt(element.lastElementChild.textContent, 10);
+  const heart = element.firstElementChild;
+  const result = await postLike(parseInt(id, 10));
+  if (result) {
+    likeCount += 1;
+    element.lastElementChild.innerText = likeCount;
+    heart.classList.add('fa-solid');
+    element.classList.add('disabled');
+  }
+};
 
-export default displayShows;
+export { displayShows, updateLikes };
