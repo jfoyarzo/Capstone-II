@@ -1,22 +1,26 @@
 * {
   box-sizing: border-box;
 }
-
 .main-nav {
   padding: 2rem;
   background-color: white !important;
   font-size: 1.5em;
 }
-
 .nav-link {
   margin-left: 2.5em;
-}
-
-main {
-  height: 80vh;
 }
 
 footer {
   border: 2px solid black;
   padding: 2em;
+}
+
+.card {
+  height: 45vh;
+}
+
+.card-img-top {
+  height: 30vh;
+  object-fit: cover;
+  object-position: top;
 }
