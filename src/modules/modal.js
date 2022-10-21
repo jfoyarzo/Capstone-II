@@ -94,12 +94,6 @@ const modalMethods = {
     const nextCount = allComments.length || 0;
     commentCount.textContent = nextCount;
   },
-
-  countComments() {
-    const comments = document.querySelector('.commentSection').children;
-    const nextCount = comments.length || 1;
-    return nextCount;
-  },
 };
 
 export default modalMethods;
