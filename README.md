@@ -16,11 +16,10 @@ This JavaScript capstone project is built on the [TVMAZE API](https://www.tvmaze
 ## Project Documentation
 
 ## Website Mockup 📱 💻 🖥️
-
+![](src/assests/mockup.png)
   
 ## Live Demo 
-
-Now it is available  [TVMAZE]()
+Now it is available  [TVMAZE](https://jfoyarzo.github.io/Capstone-II/)
 ## Getting Started
 To get a local copy up run the following steps.
 
