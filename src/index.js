@@ -1,5 +1,6 @@
 import './style.css';
-import displayShows from './modules/dom-manipulation.js';
+
+import { displayShows, updateLikes } from './modules/dom-manipulation.js';
 import modal from './modules/modal.js';
 
 displayShows()
