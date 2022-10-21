@@ -1,4 +1,4 @@
-import commentApi from './commenAPI.js';
+import commentApi from './commentAPI.js';
 
 const modalMethods = {
   async movie(movieName) {
