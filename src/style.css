@@ -31,3 +31,7 @@ footer {
   object-fit: cover;
   object-position: top;
 }
+
+.logo {
+  width: 10vh;
+}
