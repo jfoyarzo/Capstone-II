@@ -1,4 +1,5 @@
 import { getShows, getLikes, postLike } from './api-requests.js';
+import itemCounter from './items-counter.js';
 
 const displayShows = async () => {
   const data = await getShows('c');
@@ -6,6 +7,7 @@ const displayShows = async () => {
   const fragment = new DocumentFragment();
   const container = document.querySelector('.cards-container');
   const parser = new DOMParser();
+  const title = document.querySelector('#shows');
   data.forEach((element, index) => {
     const { show } = element;
     const item = likes.find((e) => e.item_id === show.id);
@@ -38,6 +40,8 @@ const displayShows = async () => {
     fragment.appendChild(card);
   });
   container.appendChild(fragment);
+  const counter = itemCounter('card');
+  title.innerText = `Shows(${counter})`;
 };
 
 const updateLikes = async (id, element) => {
