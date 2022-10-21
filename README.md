@@ -14,7 +14,7 @@ This JavaScript capstone project is built on the [TVMAZE API](https://www.tvmaze
 - GitFlow 
 
 ## Project Documentation
-
+[video presentation](https://drive.google.com/file/d/1ZsbyB_mHHYsiMf6NnWapyCC8Yy2eXRgJ/view?usp=sharing)
 ## Website Mockup 📱 💻 🖥️
 ![](src/assests/mockup.png)
   
