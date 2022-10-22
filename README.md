@@ -39,9 +39,8 @@ To get a local copy up run the following steps.
 - `npm run test` to run the tests
 ## Authors
 
-👤 **Felipe Oyarazo**
+👤 **Felipe Oyarzo**
 - GitHub: [@jfoyarzo](https://github.com/jfoyarzo)
-- Twitter: [@jfoyarzo](https://twitter.com/jfoyarzo)
 - LinkedIn: [@jfoyarzo](https://www.linkedin.com/in/jorge-felipe-oyarzo-contreras-647118247/)
 
 
